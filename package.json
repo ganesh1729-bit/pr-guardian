@@ -1,0 +1,39 @@
+{
+  "name": "pr-guardian",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "PR Guardian - AI-powered GitHub Pull Request reviewer that detects bugs, security vulnerabilities, and risky code changes.",
+  "scripts": {
+    "dev": "nitrostack-cli dev",
+    "build": "nitrostack-cli build",
+    "start": "npm run build && nitrostack-cli start",
+    "start:prod": "nitrostack-cli start",
+    "upgrade": "nitrostack-cli upgrade",
+    "install:all": "nitrostack-cli install",
+    "widget": "npm --prefix src/widgets"
+  },
+  "dependencies": {
+    "@google/genai": "^2.32.0",
+    "@modelcontextprotocol/ext-apps": "^1.0.0",
+    "@nitrostack/core": "^1.1.2",
+    "cors": "^2.8.6",
+    "dotenv": "^16.3.1",
+    "express": "^5.3.0",
+    "groq-sdk": "^1.6.0",
+    "lucide-react": "^1.66.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@nitrostack/cli": "^1.1.2",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.20.5",
+    "tsx": "^4.23.15",
+    "typescript": "^5.3.3"
+  },
+  "author": "Vinayak jindal",
+  "nitrostack": {
+    "skillsVersion": "1.0.0"
+  }
+}
